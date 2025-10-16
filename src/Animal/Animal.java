@@ -45,5 +45,15 @@ public class Animal {
         this.color = color;
     }
 
+    //toString
+    public String toString() {
+        return "Animal {" +
+                "nombre='" + nombre + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
+
+
+
 
 }

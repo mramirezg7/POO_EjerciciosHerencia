@@ -25,4 +25,13 @@ public class Gato extends Animal{
         System.out.println("El gato hace miau.");
     }
 
+    //toString sobreescrito
+    public String toString() {
+        return super.toString() +
+                ", Gato {" +
+                "raza='" + raza + '\'' +
+                '}';
+    }
+
+
 }
