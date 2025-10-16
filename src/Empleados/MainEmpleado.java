@@ -3,7 +3,7 @@ package Empleados;
 public class MainEmpleado {
     public static void main(String[] args) {
         //Empleado normal
-        Empleado empleadoUno = new Empleado("Heiner", "Montiel",
+        Empleado empleadoUno = new Empleado("Michael", "Ramírez",
                 "Recepcionista", 8.0, 2500);
         System.out.println("\nEmpleado Regular");
         empleadoUno.trabajar();
