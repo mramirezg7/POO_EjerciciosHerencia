@@ -50,7 +50,8 @@ public class Empleado {
 
     //Métodos
     public void trabajar(){
-        System.out.println(nombre + " está trabajando en sus tareas de " + puesto);
+        System.out.println(nombre + " está trabajando " +
+                "en sus tareas de " + puesto);
     }
 
     public void calcularSalario(){

@@ -6,7 +6,13 @@ public class Animal {
     protected byte edad;
     protected String color;
 
+    //Métodos
+    public void hacerSonido (){
+        System.out.println("El animal hace su sonido.");
+    }
+
     //Constructor
+
     public Animal(String nombreObjeto,
                   byte edadObjeto,
                   String colorObjeto){
@@ -30,16 +36,21 @@ public class Animal {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
     public void setEdad(byte edad) {
         this.edad = edad;
     }
+
     public void setColor(String color) {
         this.color = color;
     }
 
-    //Métodos
-    public void hacerSonido (){
-        System.out.println("El animal hace su sonido.");
+    //toString
+    public String toString() {
+        return "Animal {" +
+                "nombre='" + nombre + '\'' +
+                ", color='" + color + '\'' +
+                '}';
     }
 
 
