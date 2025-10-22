@@ -1,20 +1,10 @@
 package Figuras;
 
-public class Figura {
+public abstract class Figura {
 
     //Atributos
     protected String nombre;
     protected String color;
-
-    //Métodos
-
-    public void calcularArea() {
-        System.out.println("-1");
-    }
-
-    public void calcularPerimetro(){
-
-    }
 
 
     //Constructor
@@ -32,6 +22,20 @@ public class Figura {
     public void setNombre(String nombre) { this.nombre = nombre;}
     public void setColor(String color) {this.color = color;}
 
+    //Métodos
 
+    public abstract void calcularArea();
+    /*{
+        //System.out.println("-1");
+    }*/
+
+    /*NOTA Cuando es un métodos abstract, no puede tener cuerpo, o sea {} y se
+    pone punto y coma ;
+    */
+
+    public abstract void calcularPerimetro();
+    /*{
+        //System.out.println("-1");
+    }*/
 
 }

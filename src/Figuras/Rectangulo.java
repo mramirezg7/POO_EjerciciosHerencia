@@ -15,23 +15,6 @@ public class Rectangulo extends Figura {
         this.altura = alturaObjeto;
     }
 
-    //Métodos
-    public void calcularArea(){
-        double area = base * altura;
-        System.out.println("La fórmula para el área del " +
-                "rectangulo es: base x altura, o sea: " +
-                 + base + " x " + altura + ": ");
-        System.out.println("El área del " + getNombre() + ": " + area);
-    }
-
-    public void calcularPerimetro(){
-        double perimero = 2 * (base + altura);
-        System.out.println("\nLa fórmula para el perímetro del " +
-                "rectangulo es: 2 x (base + altura), o sea: " +
-                "2 x " + base + " + " + altura + ": ");
-        System.out.println("El perímetro de " +getNombre() + ": " + perimero);
-    }
-
     //Getters
     public double getAltura() {
         return altura;
@@ -47,4 +30,22 @@ public class Rectangulo extends Figura {
     public void setAltura(double altura) {
         this.altura = altura;
     }
+
+    //Métodos
+    public void calcularArea(){
+        double area = base * altura;
+        System.out.println("La fórmula para el área del " +
+                "rectangulo es: base x altura, o sea: " +
+                + base + " x " + altura + ": ");
+        System.out.println("El área del " + getNombre() + ": " + area);
+    }
+
+    public void calcularPerimetro(){
+        double perimero = 2 * (base + altura);
+        System.out.println("\nY la fórmula para el perímetro " +
+                "es: 2 x (base + altura), o sea: " +
+                "2 x (" + base + " + " + altura + "): ");
+        System.out.println("El perímetro de " +getNombre() + ": " + perimero);
+    }
+
 }

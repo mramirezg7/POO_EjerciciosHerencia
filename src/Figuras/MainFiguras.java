@@ -6,23 +6,26 @@ public class MainFiguras {
     public static void main(String[] args) {
 
         //Rectángulo
-        Rectangulo miRectangulo = new Rectangulo("Figuras.Rectangulo Rojo",
+        Rectangulo miRectangulo = new Rectangulo("Rectangulo Rojo",
                 "Rojo",
                 10.0,
                 5.0);
 
         //Círculo
-        Circulo miCirculo = new Circulo("Figuras.Circulo Verde",
+        Circulo miCirculo = new Circulo("Circulo Verde",
                 "Verde",
                 3.0);
+        Circulo miOtroCirculo = new Circulo("Círculo Azul",
+                "Azul", 4.5);
 
-        //Mostrar en pantalla
-        System.out.println("Figuras.Rectangulo");
+        //Para mostrar en pantalla
+        System.out.println("\nRectangulo");
         miRectangulo.calcularArea();
         miRectangulo.calcularPerimetro();
 
         System.out.println("\nCírculo");
         miCirculo.calcularArea();
         miCirculo.calcularPerimetro();
+        miOtroCirculo.calcularPerimetro();
     }
 }

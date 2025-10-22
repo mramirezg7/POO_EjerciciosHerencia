@@ -15,7 +15,7 @@ public class EmpleadoRH extends Empleado {
 
     public void trabajar(){
         System.out.println(nombre + " está revisando CVs y actualizando " +
-                "el manual del trabajandor.");
+                "el manual del trabajador.");
     }
 
 }

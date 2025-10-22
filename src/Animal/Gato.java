@@ -12,11 +12,12 @@ public class Gato extends Animal{
         raza = razaObjeto;
     }
 
-    //Getter y Setter
+    //Getter
     public String getRaza() {
         return raza;
     }
 
+    //Setter
     public void setRaza(String raza) {
         this.raza = raza;
     }

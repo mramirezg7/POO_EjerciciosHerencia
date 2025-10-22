@@ -23,13 +23,13 @@ public class Circulo extends Figura{
     public void calcularArea(){
         double area = Math.PI * (radio * radio);
         System.out.println("La fórmula para calcular el área del círculo es " +
-                "π × r^2, o sea: " + String.format("%.2f",Math.PI) + " x " + String.format("%.2f",radio) + " elevado a la 2.");
+                "π × (r^2), o sea: " + String.format("%.2f",Math.PI) + " x " + String.format("%.2f",radio) + " elevado a la 2.");
         System.out.println("El área del " + getNombre() + ": " + String.format("%.2f",area));
     }
     public void calcularPerimetro(){
         double perimero = 2 * Math.PI * radio;
-        System.out.println("La fómula para el perímetro o circunferencia del círcul es" +
-                " 2 x π x radio, o sea: 2 x" + String.format("%.2f",Math.PI) + " x " + String.format("%.2f",radio) + ".");
+        System.out.println("Y la fómula para el perímetro o circunferencia del " + getNombre() +" es" +
+                " 2 x π x radio, o sea: 2 x " + String.format("%.2f",Math.PI) + " x " + String.format("%.2f",radio) + ".");
         System.out.println("El perímetro de " +getNombre() + ": " + String.format("%.2f",perimero));
     }
 }
